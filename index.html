@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Mastar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-4xl text-center mt-5 text-violet-600 font-semibold">Money Mastar</h1>
+    </header>
+    <main>
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-10">
+                <div>
+                    <img src="https://img.freepik.com/premium-photo/australian-money-aud-with-calculator-desk_359031-20511.jpg" alt="">
+                </div>
+                <div class="text-center bg-violet-100">
+                    <h2 class="text-center text-xl">Income</h2>
+                    <label class="income text-xl" for="income">Income:</label>
+                    <input required class=" mt-5 p-1" type="number" name="income" id="income"><br>
+
+                    <h2 class="text-center text-xl mt-2">Expence</h2>
+                    <label class="income text-xl" for="food">Food:</label>
+                    <input required class=" mt-5 p-1" type="number" name="food" id="food"><br>
+                    <label class="income text-xl" for="rent">Rent:</label>
+                    <input required class=" mt-5 p-1" type="number" name="rent" id="rent"><br>
+                    <label class="income text-xl" for="cloth">Clothes:</label>
+                    <input required class=" mt-5 p-1" type="number" name="cloth" id="cloth"><br>
+                    <button class="bg-blue-500 text-white rounded px-3 py-1 mt-4" id="calc">Calculate</button>
+                    <br>
+                    <h2 class="text-xl">Total Expence: <span id="expence">00</span></h2>
+                    <h2 class="text-xl">Balance: <span id="balance">00</span></h2>
+                    <label class="income text-xl" for="save">Save:</label>
+                    <input required name="save" class="w-12 mt-5 p-1" type="number" id="savingInPercent">
+                      %
+                    <button class="bg-blue-500 rounded text-white px-3 py-1 mt-4" id="savings">Save</button>
+                    <h2 class="text-xl mt-5">Saving Amount: <span id="savingAmount">00</span></h2>
+                    <h2 class="text-xl mt-5 mb-5">Remaining Balance: <span id="remaining">00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
